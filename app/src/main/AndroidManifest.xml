@@ -30,7 +30,13 @@
 
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.WordsActivity" />
-        <activity android:name=".Activities.GamesActivity"></activity>
+        <activity android:name=".Activities.GamesActivity" />
+        <activity android:name=".Activities.NoviceWordActivity" />
+        <activity android:name=".Activities.StandardWordActivity" />
+        <activity android:name=".Activities.AdvancedWordActivity" />
+        <activity android:name=".Activities.OddManOutActivity" />
+        <activity android:name=".Activities.MatchFriendsActivity" />
+        <activity android:name=".Activities.RightManEnterActivity"></activity>
     </application>
 
 </manifest>

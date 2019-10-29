@@ -4,9 +4,7 @@ import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 
-/**
- * Created by Windows8 on 11/5/2017.
- */
+
 @Table(name="words")
 public class Words extends Model {
     @Column(name="word")

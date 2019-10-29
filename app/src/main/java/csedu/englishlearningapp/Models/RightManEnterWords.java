@@ -7,9 +7,7 @@ import com.activeandroid.query.Select;
 
 import java.util.List;
 
-/**
- * Created by Windows8 on 11/5/2017.
- */
+
 @Table(name="RightManEnterWords")
 public class RightManEnterWords extends Model {
     @Column(name="question")
