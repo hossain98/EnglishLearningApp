@@ -308,8 +308,8 @@ public class MatchFriendsView extends View {
             }
 
             Toast.makeText(mContext,"You Got :"+points,Toast.LENGTH_LONG).show();
-           for(int i=0;i<TOTAL;i++)
-               Toast.makeText(mContext,wordsSet1[i]+" : "+wordsSet2[i],Toast.LENGTH_SHORT).show();
+           //for(int i=0;i<TOTAL;i++)
+            //   Toast.makeText(mContext,wordsSet1[i]+" : "+wordsSet2[i],Toast.LENGTH_LONG).show();
 
         }
 

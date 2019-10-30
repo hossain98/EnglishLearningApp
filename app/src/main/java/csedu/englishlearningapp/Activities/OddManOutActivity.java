@@ -232,7 +232,7 @@ public class OddManOutActivity extends AppCompatActivity implements SimpleGestur
                             }
                             else
                             {
-                                Toast.makeText(OddManOutActivity.this,"Wrong!!!",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(OddManOutActivity.this,"Wrong!!! Your current score: "+points,Toast.LENGTH_SHORT).show();
                             }
                         }
                         // myView.getAnimatorY().reverse();
