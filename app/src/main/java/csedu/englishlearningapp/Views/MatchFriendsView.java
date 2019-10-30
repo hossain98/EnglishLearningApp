@@ -4,12 +4,15 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.activeandroid.query.Select;
@@ -18,6 +21,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
+import csedu.englishlearningapp.Activities.MainActivity;
 import csedu.englishlearningapp.Helpers.Line;
 import csedu.englishlearningapp.Models.MatchFriendsWords;
 
@@ -116,7 +120,7 @@ public class MatchFriendsView extends View {
         float scale= mContext.getResources().getDisplayMetrics().density ;
         mPaint.setColor(Color.BLACK);
         int shift=MAX_SIZE/TOTAL;
-        mPaint.setTextSize(15f*scale);
+        mPaint.setTextSize(20f*scale);
        // mPaint.setTextAlign(Paint.Align.CENTER);
         for(int i=0;i<TOTAL;i++) {
             canvas.drawText(wordsSet1[i], 20, shift/2+5+i*shift, mPaint);
@@ -307,9 +311,30 @@ public class MatchFriendsView extends View {
                 if(wordsSet2[i].equalsIgnoreCase(wordsSet2[ans[j]]))points++;
             }
 
-            Toast.makeText(mContext,"You Got :"+points,Toast.LENGTH_LONG).show();
-           //for(int i=0;i<TOTAL;i++)
-            //   Toast.makeText(mContext,wordsSet1[i]+" : "+wordsSet2[i],Toast.LENGTH_LONG).show();
+
+            Toast toast= Toast.makeText(mContext,"You Got :"+points,Toast.LENGTH_SHORT);
+            ViewGroup group = (ViewGroup) toast.getView();
+            TextView messageTextView = (TextView) group.getChildAt(0);
+            messageTextView.setTextSize(25);
+            toast.show();
+
+           for(int i = 0; i<TOTAL; i++){
+               Handler handler = new Handler();
+               final int finalI = i;
+               handler.postDelayed(new Runnable()
+               {
+                   @Override
+                   public void run()
+                   {
+                       Toast toast=Toast.makeText(mContext,wordsSet1[finalI]+" : "+wordsSet2[finalI],Toast.LENGTH_SHORT);
+                       ViewGroup group = (ViewGroup) toast.getView();
+                       TextView messageTextView = (TextView) group.getChildAt(0);
+                       messageTextView.setTextSize(25);
+                       toast.show();
+                   }
+               }, 2000*(finalI+1));
+           }
+
 
         }
 
