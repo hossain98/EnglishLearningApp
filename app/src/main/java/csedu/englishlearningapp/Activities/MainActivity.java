@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.activeandroid.ActiveAndroid;
+import com.activeandroid.query.Select;
+
+import java.util.List;
 
 import csedu.englishlearningapp.Models.MatchFriendsWords;
 import csedu.englishlearningapp.Models.OddManWords;
@@ -18,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     public static void loadDataBase()
     {
+        List<Words> wordsList=new Select().from(Words.class).execute();
+        if(wordsList.size()>0)
+            return;
         ActiveAndroid.beginTransaction();
         try {
             OddManWords oddManWords=new OddManWords("Love","Affection","kind","hate");
