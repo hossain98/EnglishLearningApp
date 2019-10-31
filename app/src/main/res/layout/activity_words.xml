@@ -8,20 +8,50 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeButton"
+            android:text="HOME"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wordButton"
+            android:text="WORDS"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameButton"
+            android:text="GAMES"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:text="BACK"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Novice Word List"
-            android:textSize="30dp"
             android:id="@+id/NoviceWordButton"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Standard Word List"
-            android:textSize="30dp"
             android:id="@+id/StandardWordButton"
             />
 
@@ -29,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Advanced Word List"
-            android:textSize="30dp"
             android:id="@+id/AdvancedWordButton"
             />
     </LinearLayout>

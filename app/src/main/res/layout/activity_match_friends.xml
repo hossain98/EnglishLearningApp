@@ -5,11 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="csedu.englishlearningapp.Activities.MatchFriendsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeButton"
+            android:text="HOME"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wordButton"
+            android:text="WORDS"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameButton"
+            android:text="GAMES"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:text="BACK"
+            />
+
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:text="Find Friends"
+        android:layout_below="@id/navigation"
         android:textAlignment="center"
         android:textColor="#002F00"
         android:id="@+id/banner"
@@ -19,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="match the words with the closest meaning"
+        android:textColor="#0000FF"
         android:layout_below="@+id/banner"
         android:textSize="20dp"
         android:id="@+id/instruction"/>

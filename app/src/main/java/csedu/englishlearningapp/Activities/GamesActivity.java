@@ -14,6 +14,34 @@ public class GamesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games);
+        Button homeButton=(Button) findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GamesActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button wordButton=(Button) findViewById(R.id.wordButton);
+        wordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GamesActivity.this,WordsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button gameButton=(Button) findViewById(R.id.gameButton);
+        Button backButton=(Button) findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GamesActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button oddManOutButton = (Button) findViewById(R.id.oddManOutButton);
         oddManOutButton.setOnClickListener(new View.OnClickListener() {
             @Override

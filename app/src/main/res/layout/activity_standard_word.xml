@@ -5,7 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="csedu.englishlearningapp.Activities.StandardWordActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeButton"
+            android:text="HOME"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wordButton"
+            android:text="WORDS"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameButton"
+            android:text="GAMES"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:text="BACK"
+            />
+
+    </LinearLayout>
     <ScrollView
+        android:layout_below="@id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView">
