@@ -20,7 +20,7 @@ import java.util.Random;
 
 
 public class RightManEnterView extends View {
-    final int NUM_BUBLES = 4 ;
+    final int NUM_BUBLES = 4 *1;
     int radius = 80;
     Paint paint ;
     Paint newPaint;
