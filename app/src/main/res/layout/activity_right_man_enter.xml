@@ -30,10 +30,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
             android:text="I____ rice."
             android:id="@+id/question"
             />
-        <
+         <csedu.englishlearningapp.Views.RightManEnterView
+             android:layout_width="match_parent"
+             android:id="@+id/rightManEnterView"
+             android:layout_height="wrap_content" />
+
 
 
 
