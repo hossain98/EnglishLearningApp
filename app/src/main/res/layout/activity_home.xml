@@ -22,12 +22,7 @@
             android:text="Games"
             android:id="@+id/GamesButton"
             />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Read"
-            android:id="@+id/ReadButton"
-            />
+
 
 
     </LinearLayout>

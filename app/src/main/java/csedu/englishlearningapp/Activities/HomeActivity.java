@@ -17,13 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Button WordsButton=(Button) findViewById(R.id.WordsButton);
         Button GamesButton=(Button) findViewById(R.id.GamesButton);
-        Button ReadButton=(Button) findViewById(R.id.ReadButton);
-        ReadButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(HomeActivity.this,"this is new button",Toast.LENGTH_SHORT).show();
-            }
-        });
+
         WordsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
